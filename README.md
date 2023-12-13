@@ -28,7 +28,17 @@ You just need the part after `secret=`, in the above example, it is `6shyg3uens2
 After that, you can simply call the script by the following command.
 
 ```sh
-./totp.py <path-to-your-secret-file>
+python totp.py <path-to-your-secret-file>
+```
+
+You will get something like these:
+
+```
+~/keys $ python totp.py github-2fa.txt
+Current OTP: 726347
+Next OTP: 033150
+Remaining Seconds: 14
+~/keys $ 
 ```
 
 ## Contributing
